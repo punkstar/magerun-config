@@ -1,0 +1,25 @@
+commands:
+  N98\Magento\Command\Installer\InstallCommand:
+    installation:
+      defaults:
+        currency: GBP
+	locale: en_GB
+	timezone: Europe/London
+        admin_username: admin
+        admin_firstname: Nick
+        admin_lastname: Jones
+        admin_email: nick@nicksays.co.uk
+    magento-packages:
+      - name: magento-ce-1.9.1.1 (meanbee hosted)
+        version: 1.9.1.1
+        dist:
+          url: http://cdn.meanbee.com/magerun/magento-1.9.1.1.tar.gz
+          type: tar
+        extra:
+          sample-data: sample-data-1.9.1.0-meanbee
+    demo-data-packages:
+      - name: sample-data-1.9.1.0-meanbee
+        version: 1.9.1.0
+        dist:
+          url: http://cdn.meanbee.com/magerun/magento-sample-data-1.9.1.0.tar.gz
+          type: tar
